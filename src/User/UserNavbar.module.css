@@ -3,13 +3,20 @@
     list-style-type: none;
     margin: 20px;
     cursor: pointer;
+    padding: 10px;
+}
+.highlightedButton{
+    outline: none;
+    list-style-type: none;
+    margin: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(189, 184, 184);
 }
 .Link{
     text-decoration: none;
     color: black;
-}
-.li.active{
-    background-color: grey;
 }
 img{
     margin-right: 10px;

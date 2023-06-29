@@ -6,31 +6,36 @@ import grades from "../assets/grades.png";
 import quiz from "../assets/quiz.png";
 import logout from "../assets/logout.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const UserNavbar = () => {
+  const [activeButton,setActiveButton]= useState('dashboard');
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+  };
   return (
     <div>
       <nav >
         <ul>
-          <li className={classes.li}>
+        <li className={`${classes.li}`}>
             <Link className={classes.Link}>
               <img className={classes.icons} src={question} alt="quiz" />
               QuizApp
             </Link>
           </li>
-          <li className={classes.li}>
-            <Link to="/user/dashboard" class  className={classes.Link}>
+          <li className={activeButton==='dashboard'? classes.highlightedButton: classes.li  } onClick={()=>handleButtonClick('dashboard')}>
+            <Link to="/user/dashboard"   className={classes.Link}>
               <img className={classes.icons} src={dashboard} alt="dashboard" />
               Dashboard
             </Link>
           </li>
-          <li className={classes.li}>
+          <li className={activeButton==='grades'? classes.highlightedButton: classes.li  } onClick={()=>handleButtonClick('grades')}>
             <Link className={classes.Link}>
               <img className={classes.icons} src={grades} alt="grades" />
               Grades
             </Link>
           </li>
-          <li className={classes.li}>
+          <li className={activeButton==='quiz'? classes.highlightedButton: classes.li  } onClick={()=>handleButtonClick('quiz')}>
             <Link className={classes.Link}>
               <img className={classes.icons} src={quiz} alt="quiz" />
               Quiz

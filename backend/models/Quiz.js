@@ -4,8 +4,14 @@ const mongoose = require('mongoose');
 const QuizSchema = new mongoose.Schema([{
     attemptedBy: [
         {
-            type: Object,
-            ref: 'User'
+            attempted: {
+                type: Object,
+                ref: 'User'
+            },
+            marksObtained: {
+                type: Number,
+                required: true
+            }
         }
     ],
     createdBy: {
