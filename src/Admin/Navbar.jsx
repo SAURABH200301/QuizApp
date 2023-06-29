@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <nav
       className={`navbar navbar-expand-lg ${classes.bg}`}
-      data-bs-theme="dark"
+      data-bs-theme="light"
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
@@ -51,7 +51,7 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          <div className="dropdown">
+          <div className="dropdown" style={{width:"120px"}}>
             <button
               className="btn bg-white dropdown-toggle"
               type="button"

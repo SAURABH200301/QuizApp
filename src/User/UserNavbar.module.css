@@ -1,0 +1,20 @@
+.li{
+    outline: none;
+    list-style-type: none;
+    margin: 20px;
+    cursor: pointer;
+}
+.Link{
+    text-decoration: none;
+    color: black;
+}
+.li.active{
+    background-color: grey;
+}
+img{
+    margin-right: 10px;
+}
+
+.icons{
+    height: 30px;
+}

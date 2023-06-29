@@ -1,8 +1,17 @@
+import UserNavbar from "./UserNavbar";
+import Main from "./main";
 
 function UserDashboard() {
   return (
-    <div>UserDashboard</div>
-  )
+    <div className="row m-3 bg-light rounded shadow">
+      <div className="col-md-2">
+        <UserNavbar />
+      </div>
+      <div className="col-md-10">
+        <Main />
+      </div>
+    </div>
+  );
 }
 
-export default UserDashboard
+export default UserDashboard;

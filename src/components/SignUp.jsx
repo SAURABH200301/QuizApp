@@ -27,9 +27,9 @@ function Signup() {
       console.log("Account Created");
       // props.showAlert("Account created", "success");
       localStorage.setItem("token", json.authToken);
-      if (isAdmin === "true") { //bavigate to dashboard of admin if signedup as admin
+      if (isAdmin === "true") { //navigate to dashboard of admin if signedup as admin
         navigate("/admin/dashboard");
-      } else navigate("/");
+      } else navigate("/user/dashboard");
     } else {
       console.log("nahi bhna");
       // props.showAlert("User With this Credientials already exists", "danger");
