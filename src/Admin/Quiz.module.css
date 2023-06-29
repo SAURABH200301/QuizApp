@@ -1,0 +1,21 @@
+.divider{
+    border: 1px solid blue;
+    width: 100%;
+}
+textarea{
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 2px 5px rgba(49, 42, 186, 0.25);
+    padding: 10px;
+    resize: none;
+    background-color: rgb(224, 224, 233);
+    font-weight: 500;
+    width: 90%;
+    margin: 5px;
+    outline: none;
+}
+span input{
+    font-size: 20px;
+    border:none;
+    outline: none
+}

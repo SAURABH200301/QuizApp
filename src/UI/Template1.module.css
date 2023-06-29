@@ -1,0 +1,12 @@
+.main {
+    padding: 0.8rem;
+    box-shadow: 0 2px 8px rgba(101, 95, 218, 0.25);
+    border-radius: 14px;
+    background-color: white;
+    opacity: 80%;
+}
+@media screen and (max-width: 600px){
+  .main{
+    padding: 0.2rem;
+  }
+}
