@@ -24,8 +24,8 @@ function Navbar() {
       data-bs-theme="light"
     >
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Quiz-app
+        <a className="navbar-brand fw-bold" href="#">
+          GetQuizy
         </a>
         <button
           className="navbar-toggler"

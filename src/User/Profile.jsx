@@ -1,4 +1,4 @@
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 
 const Profile = () => {
   const [username, setUsername] = useState("username");
@@ -16,7 +16,11 @@ const Profile = () => {
     }
     fetchUsername();
   }, []);
-  return <div>{username}</div>;
+  return (
+    <div>
+      username: <b>{username}</b>
+    </div>
+  );
 };
 
 export default Profile;

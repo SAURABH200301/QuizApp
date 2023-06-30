@@ -4,12 +4,12 @@ import quiz from "../assets/quiz.png";
 
 function Main() {
   return (
-    <div className={classes.main}>
-      <div className="mt-5 mx-3">
+    <div className={`row ${classes.main} mt-5`}>
+      <div className="p-5 col-md-8 ">
         <div className="d-flex justify-content-center">
           <h1 className={classes.fontHead}>Quiz App</h1>
         </div>
-        <p className="d-flex justify-content-around">Welcome ...</p>
+        <p className="fs-3 d-flex justify-content-around">Welcome ...</p>
         <div className="d-flex justify-content-center p-3">
           <div className="btn-group border">
             <Link to="/login">
@@ -21,7 +21,7 @@ function Main() {
         </div>
         <div className=" row">
           <div className="col-sm-12">
-            <p className="d-flex justify-content-center">New User</p>
+            <p className="fs-3 d-flex justify-content-center">New User</p>
           </div>
           <div className="col-sm-12">
             <span className="d-flex justify-content-center">
@@ -36,7 +36,7 @@ function Main() {
           </div>
         </div>
       </div>
-      <div className={classes.logoBox}>
+      <div className={`col-md-4  ${classes.logoBox} `}>
         <img className={classes.logo} src={quiz} alt="quiz" />
       </div>
     </div>

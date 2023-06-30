@@ -2,7 +2,7 @@ import Dashboard from "./Admin/Dashboard";
 import UserDashboard from "./User/UserDashboard";
 import Login from "./components/Login";
 import Signup from "./components/SignUp";
-import Main from "./components/main";
+import Main from "./components/Landing";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {

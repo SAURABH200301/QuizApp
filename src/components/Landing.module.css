@@ -1,0 +1,30 @@
+.hero{
+    background-image: url('../assets/wallpaper.png');
+    height: 40vw;
+    width: 100%;
+    position: absolute;;
+}
+.inner{
+    /* border: 1px solid black; */
+    width: 100%;
+    display: block;
+    position:absolute;
+    margin-top: 50px;
+}
+.signup{
+    /* border: 1px solid black; */
+    color: white;
+    font-weight: 700;
+    background-color: rgb(91, 91, 181);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.signup:hover{
+    color: white;
+    font-weight: 700;
+    background-color: rgb(80, 80, 218);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.inner div p{
+    font-size: 2vw;
+}
