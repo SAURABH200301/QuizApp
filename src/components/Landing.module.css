@@ -1,8 +1,11 @@
 .hero{
-    background-image: url('../assets/wallpaper.png');
+    background-image: url('../assets/wallpaper4.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
     height: 40vw;
     width: 100%;
-    position: absolute;;
+    position: absolute;
+    /* border: 1px solid black; */
 }
 .inner{
     /* border: 1px solid black; */

@@ -67,7 +67,7 @@ function Login() {
   };
 
   return (
-    <div className="d-flex justify-content-center mt-5 ">
+    <div className={`d-flex justify-content-center mt-5 ${classes.main}`}>
       <Template2>
         <div className="" style={{ width: "40vw" }}>
           <div className="row mb-5">
@@ -76,11 +76,11 @@ function Login() {
               <p>Welcome Back!</p>
             </div>
           </div>
-          <div className="card-body d-flex flex-column align-items-center">
+          <div className="card-body d-flex flex-column align-items-center ">
             <div className="p-5">
               <img className={classes.user} src={user} alt="user" />
             </div>
-            <form className="text-center" method="post" onSubmit={handleSubmit}>
+            <form className={`text-center  ${classes.form} `}method="post" onSubmit={handleSubmit}>
               <div className="mb-3">
                 <input
                   className={`${classes.input}`}
@@ -130,8 +130,8 @@ function Login() {
                   As Admin
                 </label>
               </div>
-              <div className="mb-3">
-                <button className="btn btn-primary d-block w-100" type="submit">
+              <div className="mb-3 d-flex justify-content-center">
+                <button className={`${classes.btnn} btn btn-primary d-block `} type="submit">
                   Login
                 </button>
               </div>

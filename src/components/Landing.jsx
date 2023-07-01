@@ -11,10 +11,10 @@ const Landing = () => {
       <div>
         <div className={classes.hero}></div>
         <div className={classes.inner}>
-          <div>
+          <div className="d-flex justify-content-center">
             <p>The best digital study tools</p>
           </div>
-          <div>
+          <div className="d-flex justify-content-center">
             <Link to="/register">
               <button className={`btn ${classes.signup} `}>
                 Register for free

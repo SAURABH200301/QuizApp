@@ -14,7 +14,9 @@
     border-bottom: 1px solid rgb(120, 120, 214)
 }
 .page{
-    margin-top: 40px;
+    background-image: url('../assets/wallpaper5.png');
+    background-size: contain;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
