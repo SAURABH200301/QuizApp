@@ -1,5 +1,5 @@
 .divider{
-    border: 1px solid blue;
+    border: 1px solid #27374D;
     width: 100%;
 }
 textarea{
@@ -18,4 +18,13 @@ span input{
     font-size: 20px;
     border:none;
     outline: none
+}
+.btnn{
+    background-color: #27374D;
+    color: white;
+    font-weight: 600;
+    border:1px solid white;
+}
+.btnn:hover{
+    border: 2px solid #DDE6ED;
 }

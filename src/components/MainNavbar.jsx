@@ -3,9 +3,9 @@ import classes from './MainNavbar.module.css'
 
 const MainNavbar = () => {
   return (
-    <nav className={`navbar navbar-expand-lg `} data-bs-theme="light">
+    <nav className={`navbar navbar-expand-lg ${classes.nav}`} >
       <div className="container-fluid">
-        <span className="navbar-brand fw-bold" >
+        <span className="navbar-brand fw-bold" style={{color:"#9DB2BF"}} >
           GetQuizy
         </span>
         <div className={` ${classes.navContent}`}>

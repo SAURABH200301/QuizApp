@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useSelector } from "react-redux";
+import classes from './CreateQuiz.module.css'
 
 function CreateQuiz() {
   const num = useSelector((state) => state.ques.numberOfQues);
@@ -58,7 +59,7 @@ function CreateQuiz() {
   };
   return (
     <div>
-      <button className="btn btn-primary border" onClick={createQuizhandler}>
+      <button className={`btn ${classes.btnn}`}onClick={createQuizhandler}>
         Create Quiz
       </button>
     </div>

@@ -4,17 +4,23 @@
     justify-content: space-between;
 }
 .signup{
-    background-color: rgb(152, 152, 50);
+    background-color:  #DDE6ED;
     font-weight: 700;
 }
 .signup:hover{
     background-color: rgb(37, 31, 31);
-    color: yellow;
+    color: #9DB2BF;
 }
 .login{
     font-weight: 700;
+    border:2px solid #DDE6ED;
+    color: #DDE6ED;
 }
 .login:hover{
-    border: 2px solid rgb(41, 174, 114);
-    color: rgb(41, 174, 114);
+    border: 2px solid #9DB2BF;
+    color: #9DB2BF;
+}
+.nav{
+    background-color: #27374D;
+    color: #EAB2A0;
 }

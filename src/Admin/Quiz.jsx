@@ -178,7 +178,7 @@ function Quiz() {
                   checked={quesType === "TF"}
                   onChange={handleChange}
                 />
-                <label className="btn btn-outline-primary" htmlFor="btnradio1">
+                <label className={`btn ${classes.btnn}`} htmlFor="btnradio1">
                   True/False
                 </label>
 
@@ -192,7 +192,7 @@ function Quiz() {
                   checked={quesType === "MC"}
                   onChange={handleChange}
                 />
-                <label className="btn btn-outline-primary" htmlFor="btnradio2">
+                <label className={`btn ${classes.btnn}`} htmlFor="btnradio2">
                   Multiple Choice
                 </label>
               </div>
@@ -221,7 +221,7 @@ function Quiz() {
                       onChange={AnswerHandler}
                     />
                     <label
-                      className="btn btn-outline-primary"
+                      className={`btn ${classes.btnn}`}
                       htmlFor="btnradi1"
                     >
                       True
@@ -238,7 +238,7 @@ function Quiz() {
                       onChange={AnswerHandler}
                     />
                     <label
-                      className="btn btn-outline-primary"
+                      className={`btn ${classes.btnn}`}
                       htmlFor="btnradi2"
                     >
                       False
@@ -250,13 +250,13 @@ function Quiz() {
             {quesType === "MC" && (
               <div className="row mt-3">
                 <div className="col-md-6">
-                  <p>Answer</p>
+                  <p className="fw-bold">Answer</p>
                   <p>Type your options and choose the correct answer</p>
                 </div>
                 <div className="col-md-6">
                   <div className="form-check">
                     <input
-                      className="form-check-input"
+                      className={`form-check-input ${classes.btnn}`}
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault1"
@@ -279,7 +279,7 @@ function Quiz() {
                   </div>
                   <div className="form-check">
                     <input
-                      className="form-check-input"
+                      className={`form-check-input ${classes.btnn}`}
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault2"
@@ -302,7 +302,7 @@ function Quiz() {
                   </div>
                   <div className="form-check">
                     <input
-                      className="form-check-input"
+                      className={`form-check-input ${classes.btnn}`}
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault3"
@@ -325,7 +325,7 @@ function Quiz() {
                   </div>
                   <div className="form-check">
                     <input
-                      className="form-check-input"
+                      className={`form-check-input ${classes.btnn}`}
                       type="radio"
                       name="flexRadioDefault"
                       id="flexRadioDefault4"
@@ -359,7 +359,7 @@ function Quiz() {
               </button>
               <button
                 type="button"
-                className="btn btn-primary"
+                className={`btn ${classes.btnn}`}
                 onClick={addQuestionHandler}
               >
                 Add

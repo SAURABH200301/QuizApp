@@ -1,5 +1,8 @@
+body{
+    background-color: #526D82;
+}
 .hero{
-    background-image: url('../assets/wallpaper4.jpg');
+    background-image: url('../assets/backgroundf.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 40vw;
@@ -13,18 +16,19 @@
     display: block;
     position:absolute;
     margin-top: 50px;
-}
-.signup{
-    /* border: 1px solid black; */
     color: white;
     font-weight: 700;
-    background-color: rgb(91, 91, 181);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.signup{
+    font-weight: 700;
+    border:2px solid #DDE6ED;
+    color: #DDE6ED;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .signup:hover{
     color: white;
     font-weight: 700;
-    background-color: rgb(80, 80, 218);
+    background-color: #27374D;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 

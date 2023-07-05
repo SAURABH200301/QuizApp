@@ -1,13 +1,6 @@
-/* .bg{    
-    background-color: hsl(210, 71%, 56%);
-    background-color: white;
-    color: black;
- }
-
-.mx{
-    border: 1px solid black;
+.nav{
+    background-color: #27374D;
 }
-.liHover :hover{
-    color: black;
-    background-color: white;
-} */
+.colorDark{
+    color: #27374D;
+}

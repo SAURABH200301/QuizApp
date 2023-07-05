@@ -20,11 +20,11 @@ function Navbar() {
   }, []);
   return (
     <nav
-      className={`navbar navbar-expand-lg ${classes.bg}`}
-      data-bs-theme="light"
+      className={`navbar navbar-expand-lg ${classes.nav}`}
+      data-bs-theme="dark"
     >
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="#">
+        <a className="navbar-brand fw-bold" >
           GetQuizy
         </a>
         <button
@@ -51,9 +51,9 @@ function Navbar() {
               </a>
             </li>
           </ul>
-          <div className="dropdown" style={{width:"120px"}}>
+          <div className="dropdown" >
             <button
-              className="btn bg-white dropdown-toggle"
+              className={`btn bg-white dropdown-toggle fw-bold ${classes.colorDark}`}
               type="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"

@@ -1,21 +1,25 @@
 import { useSelector } from "react-redux";
 import MultiAnswer from "./MultiAnswer";
 import TrueFalse from "./TrueFalse";
+import { useEffect, useState } from "react";
 
 function ShowQuestion() {
   const num = useSelector((state) => state.ques.numberOfQues);
   const totalMarks = useSelector((state) => state.ques.totalMarks);
   const title = useSelector((state) => state.ques.title);
-  
+  const [titleChange,setTitle]= useState("Added Question")
+  useEffect(()=>{
+    setTitle(title)
+  },[title])
   return (
     <div>
       <h3 className="d-flex justify-content-around" >
-        {title || "Added Question"}
+        {titleChange || "Added Question"}
       </h3>
       <div
         style={{
           width: "100%",
-          borderColor: "blue",
+          borderColor: "#27374D",
           borderStyle: "solid",
           borderWidth: "1px",
         }}

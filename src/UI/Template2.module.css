@@ -1,8 +1,9 @@
 .main {
     padding: 0.8rem;
-    box-shadow: 0 2px 8px rgba(101, 95, 218, 0.25);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.25);
     border-radius: 14px;
-    background-image: linear-gradient(to left, rgb(146, 146, 224),rgb(195, 187, 187));
+    /* background-color: #9DB2BF; */
+    background: linear-gradient(to bottom,#8ea8b8 80%, white );
     opacity: 80%;
 }
 @media screen and (max-width: 600px){

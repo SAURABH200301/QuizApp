@@ -113,7 +113,7 @@ function Login() {
                   value="false"
                   onChange={onChange}
                 />
-                <label className="btn btn-outline-primary" htmlFor="btnradio1">
+                <label className={`btn ${classes.btnn}`} htmlFor="btnradio1">
                   As User
                 </label>
 
@@ -126,12 +126,12 @@ function Login() {
                   value="true"
                   onChange={onChange}
                 />
-                <label className="btn btn-outline-primary" htmlFor="btnradio2">
+                <label className={`btn ${classes.btnn}`} htmlFor="btnradio2">
                   As Admin
                 </label>
               </div>
               <div className="mb-3 d-flex justify-content-center">
-                <button className={`${classes.btnn} btn btn-primary d-block `} type="submit">
+                <button className={`btn ${classes.btnn}`} type="submit">
                   Login
                 </button>
               </div>
