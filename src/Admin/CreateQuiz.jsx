@@ -33,6 +33,9 @@ function CreateQuiz() {
   const createQuizhandler = async () => {
     fetchUsername();
     try {
+      if(num===0 || totalMarks===0 || !question){
+        throw new Error("Please Enter the Quiz");
+      }
       const response = await fetch("http://localhost:5000/api/quiz/setquiz", {
         method: "POST",
         headers: {
@@ -54,7 +57,7 @@ function CreateQuiz() {
         alert("Quiz has been created")
       }
     } catch (error) {
-      console.log(error);
+      alert(error)
     }
   };
   return (
