@@ -13,9 +13,9 @@ function App() {
         <Route exact path="/login" Component={Login} />
         <Route exact path="/register" Component={Signup} />
         <Route exact path="/admin/Dashboard" Component={Dashboard} />
-        <Route excat path="/user/dashboard" Component={UserDashboard}/>
+        <Route excat path="/user/*" Component={UserDashboard}/>
       </Routes>
-    </Router>
+    </Router> 
   );
 }
 

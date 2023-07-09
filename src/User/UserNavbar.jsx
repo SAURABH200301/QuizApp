@@ -1,73 +1,70 @@
+
 import Logout from "../components/Logout";
 import classes from "./UserNavbar.module.css";
-import dashboard from "../assets/dashboard.png";
-import question from "../assets/question.png";
-import grades from "../assets/grades.png";
-import quiz from "../assets/quiz.png";
-import logout from "../assets/logout.png";
+import menu from '../assets/menu.png'
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 const UserNavbar = () => {
-  const [activeButton, setActiveButton] = useState("dashboard");
-  const handleButtonClick = (buttonName) => {
-    setActiveButton(buttonName);
-  };
+  const openNav = () => {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  const closeNav = () => {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
   return (
     <div>
-      <nav>
-        <ul>
-          <li className={`${classes.li}`}>
-            <Link className={classes.Link}>
-              <img className={classes.icons} src={question} alt="quiz" />
-              QuizApp
-            </Link>
-          </li>
-          <li
-            className={
-              activeButton === "dashboard"
-                ? classes.highlightedButton
-                : classes.li
-            }
-            onClick={() => handleButtonClick("dashboard")}
-          >
-            <Link to="/user/dashboard" className={classes.Link}>
-              <img className={classes.icons} src={dashboard} alt="dashboard" />
-              Dashboard
-            </Link>
-          </li>
-          <li
-            className={
-              activeButton === "grades" ? classes.highlightedButton : classes.li
-            }
-            onClick={() => handleButtonClick("grades")}
-          >
-            <Link className={classes.Link}>
-              <img className={classes.icons} src={grades} alt="grades" />
-              Grades
-            </Link>
-          </li>
-          <li
-            className={
-              activeButton === "quiz" ? classes.highlightedButton : classes.li
-            }
-            onClick={() => handleButtonClick("quiz")}
-          >
-            <Link className={classes.Link}>
-              <img className={classes.icons} src={quiz} alt="quiz" />
-              Quiz
-            </Link>
-          </li>
-          <li className={`d-flex ${classes.li}`}>
-            <span>
-              <img className={classes.icons} src={logout} alt="logout" />
-            </span>
-            <Logout height="30px" />
-          </li>
-        </ul>
-      </nav>
+      <div id="mySidenav" className={classes.sidenav}>
+        <div className={classes.closebtn} onClick={closeNav}>
+          &times;
+        </div>
+        <Link to='/user'>Dashboard</Link>
+        <Link to='/user/grades'>Grades</Link>
+        <a href="#">Clients</a>
+        <Logout />
+      </div>
+
+      <span onClick={openNav}>
+        <img src={menu} className={classes.icons} alt="menu icon"/>
+      </span>
     </div>
   );
 };
 
 export default UserNavbar;
+
+// import Logout from "../components/Logout";
+// import classes from "./UserNavbar.module.css";
+// import menu from '../assets/menu.png'
+// import { Link } from "react-router-dom";
+
+// const UserNavbar = () => {
+//   function openNav() {
+//     document.getElementById("mySidenav").style.width = "250px";
+//   }
+
+//   function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//   }
+
+//   return (
+//     <div>
+//       <div id="mySidenav" className={classes.sidenav}>
+//         <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>
+//           &times;
+//         </a>
+//         <a href="#"><Link to='/user'>Dashboard</Link></a>
+//         <a href="#"><Link to='/user/grades'>Grades</Link></a>
+//         <a href="#">Clients</a>
+//         <a href="#"><Logout/></a>
+//       </div>
+
+//       <span onClick={openNav}>
+//         <img src={menu} className={classes.icons} alt="menu icon"/>
+//       </span>
+//     </div>
+//   );
+// };
+
+// export default UserNavbar;

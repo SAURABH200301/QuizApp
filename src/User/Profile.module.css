@@ -1,0 +1,7 @@
+.text{
+    text-transform: capitalize;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+}

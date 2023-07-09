@@ -46,7 +46,7 @@ function Login() {
           credientials.isAdmin === "false" &&
           credientials.isAdmin === fetchUserJson.isAdmin
         ) {
-          navigate("/user/dashboard");
+          navigate("/user");
         } else {
           alert("Invalid Credientials");
           localStorage.removeItem("token");
