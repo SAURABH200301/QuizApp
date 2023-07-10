@@ -1,17 +1,16 @@
-
 import Logout from "../components/Logout";
 import classes from "./UserNavbar.module.css";
-import menu from '../assets/menu.png'
+import menu from "../assets/menu.png";
 import { Link } from "react-router-dom";
 
 const UserNavbar = () => {
   const openNav = () => {
     document.getElementById("mySidenav").style.width = "250px";
-  }
+  };
 
   const closeNav = () => {
     document.getElementById("mySidenav").style.width = "0";
-  }
+  };
 
   return (
     <div>
@@ -19,14 +18,14 @@ const UserNavbar = () => {
         <div className={classes.closebtn} onClick={closeNav}>
           &times;
         </div>
-        <Link to='/user'>Dashboard</Link>
-        <Link to='/user/grades'>Grades</Link>
+        <Link to="/user">Dashboard</Link>
+        <Link to="/user/grades">Grades</Link>
         <a href="#">Clients</a>
         <Logout />
       </div>
 
       <span onClick={openNav}>
-        <img src={menu} className={classes.icons} alt="menu icon"/>
+        <img src={menu} className={classes.icons} alt="menu icon" />
       </span>
     </div>
   );

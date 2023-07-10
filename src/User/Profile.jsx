@@ -24,7 +24,7 @@ const Profile = () => {
   }, []);
   const colors = ["#DDE6ED", "#9DB2BF", "#526D82", "#526E72", "#27374D"];
   return (
-    <div>
+    <div className="py-3">
       <Template1>
         <h2 className={classes.heading}>Profile</h2>
         <div className={classes.text}>

@@ -16,9 +16,28 @@
 .container{
     padding:10px;
     background-color:#DDE6ED;
+    border-bottom: 2px solid white
 }
 .container:hover{
-    border: 1px solid rgb(140, 152, 161);
-    box-shadow: 2px 2px 4px rgba(39,55,77, 0.8);
+    border: 1px solid #DDE6ED;
+    /* box-shadow: 2px 2px 4px rgba(39,55,77, 0.8); */
+    box-shadow: 2px 2px 4px white;
 
+}
+.content{
+    font-size: large;
+    flex-direction: row;
+}
+.date{
+    font-size: small;
+    color: #3c659f;
+}
+.available{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 1px solid white;
+}
+.img{
+    height: 25vw;
 }
