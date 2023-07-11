@@ -1,0 +1,9 @@
+.main{
+    border-radius: 15px;
+    box-shadow: 1px 2px 4px rgb(255, 255, 255);
+    background-color: antiquewhite;
+    padding: 20px;
+    /* width: 500px; */
+    margin: 10px;
+    height: 100%;
+}
